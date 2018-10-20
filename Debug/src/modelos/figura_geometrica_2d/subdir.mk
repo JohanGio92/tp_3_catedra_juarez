@@ -4,14 +4,17 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 CPP_SRCS += \
+../src/modelos/figura_geometrica_2d/Circulo.cpp \
 ../src/modelos/figura_geometrica_2d/Cuadrado.cpp \
 ../src/modelos/figura_geometrica_2d/Cuadrilatero.cpp 
 
 OBJS += \
+./src/modelos/figura_geometrica_2d/Circulo.o \
 ./src/modelos/figura_geometrica_2d/Cuadrado.o \
 ./src/modelos/figura_geometrica_2d/Cuadrilatero.o 
 
 CPP_DEPS += \
+./src/modelos/figura_geometrica_2d/Circulo.d \
 ./src/modelos/figura_geometrica_2d/Cuadrado.d \
 ./src/modelos/figura_geometrica_2d/Cuadrilatero.d 
 
