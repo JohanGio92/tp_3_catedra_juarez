@@ -23,5 +23,6 @@ C_DEPS :=
 
 # Every subdirectory with source files must be described here
 SUBDIRS := \
+src/modelos/figura_geometrica_2d \
 src \
 

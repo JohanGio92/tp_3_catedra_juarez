@@ -9,5 +9,4 @@ public:
 	virtual ~FiguraGeometrica2D(){};
 };
 
-
 #endif

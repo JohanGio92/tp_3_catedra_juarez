@@ -1,7 +1,9 @@
 #include <iostream>
-using namespace std;
+
+#include "modelos/figura_geometrica_2d/Cuadrado.h"
 
 int main() {
-	cout << "" << endl;
+	Cuadrado cuadrado(5);
+	std::cout << cuadrado.calcularPerimetro() << std::endl;
 	return 0;
 }
