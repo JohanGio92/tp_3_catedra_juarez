@@ -1,19 +1,24 @@
+#include "modelos/figura_geometrica_2d/FiguraGeometrica2D.h"
+#include "utilidades/ListaEnlazada.h"
+#include "modelos/archivo_de_figuras_geometricas_2D/ArchivoFigurasGeometricas2D.h"
 #include <iostream>
 
-#include "modelos/archivo_de_figuras_geometricas_2D/ConstructorDeCirculos.h"
-#include "modelos/figura_geometrica_2d/Circulo.h"
-#include "modelos/figura_geometrica_2d/Cuadrado.h"
-#include "utilidades/ListaEnlazada.h"
 
 int main() {
-	ConstructorDeFigurasGeometricas2D* constructorDeFiguras = new ConstructorDeCirculos();
-	FiguraGeometrica2D* figura = constructorDeFiguras->construir();
+	ArchivoFigurasGeometricas2D archivo;
+	ListaEnlazada<FiguraGeometrica2D*> figuras;
 
-	std::cout << figura->calcularPerimetro()<< std::endl;
-	std::cout << figura->calcularSuperficie() << std::endl;
+	archivo.convertirArchivoHaciaLista(figuras);
 
-	delete constructorDeFiguras;
-	delete figura;
+	for (unsigned i = 0; i < figuras.obtenerTamanio(); ++i) {
+		std::cout << "Superificie: " << figuras[i]->calcularSuperficie() << std::endl;
+		std::cout << "Perimetro: " << figuras[i]->calcularPerimetro() << std::endl;
+	}
+
+	for (unsigned i = 0; i < figuras.obtenerTamanio(); ++i) {
+		delete figuras[i];
+	}
+
 
 	return 0;
 }

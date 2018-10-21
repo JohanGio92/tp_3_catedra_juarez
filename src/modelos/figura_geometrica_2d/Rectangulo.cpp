@@ -14,6 +14,13 @@ double Rectangulo::calcularPerimetro() {
 	return lado * base;
 }
 
+FiguraGeometrica2D* Rectangulo::construir(std::ifstream& rutaDeEntrada) {
+	double altura, base;
+	rutaDeEntrada >> altura;
+	rutaDeEntrada >> base;
+	return new Rectangulo(altura, base);
+}
+
 Rectangulo::~Rectangulo() {
 }
 

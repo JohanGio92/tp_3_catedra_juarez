@@ -17,11 +17,12 @@ public:
 	void agregar(T elemento);
 	void agregar(unsigned posicion, T elemento);
 	Nodo<T>* obtenerNodo(unsigned posicion);
+	unsigned obtenerTamanio();
 	T operator[](unsigned posicion);
 	~ListaEnlazada();
 private:
 	bool estaEnElRango(unsigned posicion);
-	void destruir(Nodo<T>* nodo);
+	void destruir(Nodo<T>* iterador);
 
 };
 
@@ -68,10 +69,16 @@ bool ListaEnlazada<T>::estaEnElRango(unsigned posicion) {
 }
 
 template<class T>
-void ListaEnlazada<T>::destruir(Nodo<T>* nodo) {
-	if(nodo){
-		this->destruir(nodo->obtenerSiguiente());
-		delete nodo;
+inline unsigned ListaEnlazada<T>::obtenerTamanio() {
+	return tamanio;
+}
+
+template<class T>
+void ListaEnlazada<T>::destruir(Nodo<T>* iterador) {
+	while (iterador != nullptr) {
+		Nodo<T>* anterior = iterador;
+		iterador = iterador->obtenerSiguiente();
+		delete anterior;
 	}
 }
 

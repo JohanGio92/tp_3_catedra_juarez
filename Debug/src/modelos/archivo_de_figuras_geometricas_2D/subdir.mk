@@ -4,19 +4,13 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 CPP_SRCS += \
-../src/modelos/archivo_de_figuras_geometricas_2D/ConstructorDeCirculos.cpp \
-../src/modelos/archivo_de_figuras_geometricas_2D/ConstructorDeCuadrados.cpp \
-../src/modelos/archivo_de_figuras_geometricas_2D/ConstructorDeRectangulos.cpp 
+../src/modelos/archivo_de_figuras_geometricas_2D/ArchivoFigurasGeometricas2D.cpp 
 
 OBJS += \
-./src/modelos/archivo_de_figuras_geometricas_2D/ConstructorDeCirculos.o \
-./src/modelos/archivo_de_figuras_geometricas_2D/ConstructorDeCuadrados.o \
-./src/modelos/archivo_de_figuras_geometricas_2D/ConstructorDeRectangulos.o 
+./src/modelos/archivo_de_figuras_geometricas_2D/ArchivoFigurasGeometricas2D.o 
 
 CPP_DEPS += \
-./src/modelos/archivo_de_figuras_geometricas_2D/ConstructorDeCirculos.d \
-./src/modelos/archivo_de_figuras_geometricas_2D/ConstructorDeCuadrados.d \
-./src/modelos/archivo_de_figuras_geometricas_2D/ConstructorDeRectangulos.d 
+./src/modelos/archivo_de_figuras_geometricas_2D/ArchivoFigurasGeometricas2D.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes

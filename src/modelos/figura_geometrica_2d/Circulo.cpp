@@ -18,6 +18,12 @@ double Circulo::calcularPerimetro() {
 	return 2 * PI * radio;
 }
 
+FiguraGeometrica2D* Circulo::construir(std::ifstream& rutaDeEntrada) {
+	double radio;
+	rutaDeEntrada >> radio;
+	return new Circulo(radio);
+}
+
 Circulo::~Circulo() {
 }
 
