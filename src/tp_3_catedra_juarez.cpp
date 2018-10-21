@@ -1,15 +1,19 @@
 #include <iostream>
 
+#include "modelos/archivo_de_figuras_geometricas_2D/ConstructorDeCirculos.h"
 #include "modelos/figura_geometrica_2d/Circulo.h"
 #include "modelos/figura_geometrica_2d/Cuadrado.h"
 #include "utilidades/ListaEnlazada.h"
 
 int main() {
-	Circulo circulo(4);
-	Cuadrado cuadrado(5);
-	ListaEnlazada<int> lista;
-	lista.agregar(5);
-	std::cout << lista[0] << std::endl;
-	std::cout << circulo.calcularPerimetro() << std::endl;
+	ConstructorDeFigurasGeometricas2D* constructorDeFiguras = new ConstructorDeCirculos();
+	FiguraGeometrica2D* figura = constructorDeFiguras->construir();
+
+	std::cout << figura->calcularPerimetro()<< std::endl;
+	std::cout << figura->calcularSuperficie() << std::endl;
+
+	delete constructorDeFiguras;
+	delete figura;
+
 	return 0;
 }
