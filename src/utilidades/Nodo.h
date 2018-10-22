@@ -48,9 +48,6 @@ void Nodo<T>::cambiarSiguiente(Nodo<T>* siguiente) {
 
 template<class T>
 Nodo<T>::~Nodo(){
-	if(siguiente != nullptr){
-		delete siguiente;
-	}
 }
 
 #endif

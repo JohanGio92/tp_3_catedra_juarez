@@ -12,6 +12,7 @@ public:
 	Entero leerEntero(std::string mensaje);
 	template <typename T>
 	void escribir(T mensaje);
+	void separador();
 	virtual ~Consola();
 };
 

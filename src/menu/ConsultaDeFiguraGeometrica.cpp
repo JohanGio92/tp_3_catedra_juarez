@@ -1,7 +1,7 @@
 #include "ConsultaDeFiguraGeometrica.h"
 
 ConsultaDeFiguraGeometrica::ConsultaDeFiguraGeometrica(
-		ListaEnlazada<FiguraGeometrica2D*> figuras) :
+		ListaEnlazada<FiguraGeometrica2D*>& figuras) :
 		Opcion(". Consultar figura", figuras) {
 }
 

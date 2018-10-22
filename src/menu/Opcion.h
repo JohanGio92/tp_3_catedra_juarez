@@ -12,9 +12,10 @@ protected:
 	std::string titulo;
 	ListaEnlazada<FiguraGeometrica2D*> figuras;
 public:
-	Opcion(std::string titulo, ListaEnlazada<FiguraGeometrica2D*> figuras);
+	Opcion(std::string titulo);
+	Opcion(std::string titulo, ListaEnlazada<FiguraGeometrica2D*>& figuras);
 	virtual void ejecutar() = 0;
-	virtual void mostrarTitulo();
+	virtual void mostrarTitulo(unsigned posicion);
 	virtual ~Opcion();
 };
 

@@ -12,3 +12,7 @@ Entero Consola::leerEntero(std::string mensaje) {
 
 Consola::~Consola() {
 }
+
+void Consola::separador() {
+	this->escribir("-----------------------------------------");
+}

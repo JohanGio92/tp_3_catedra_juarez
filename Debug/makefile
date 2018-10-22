@@ -12,6 +12,7 @@ RM := rm -rf
 -include src/modelos/figura_geometrica_2d/subdir.mk
 -include src/modelos/archivo_de_figuras_geometricas_2D/subdir.mk
 -include src/menu/subdir.mk
+-include src/Aplicacion/subdir.mk
 -include src/subdir.mk
 -include subdir.mk
 -include objects.mk
