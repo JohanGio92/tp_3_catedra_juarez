@@ -27,6 +27,5 @@ src/Aplicacion \
 src/menu \
 src/modelos/archivo_de_figuras_geometricas_2D \
 src/modelos/figura_geometrica_2d \
-src \
 src/utilidades \
 
