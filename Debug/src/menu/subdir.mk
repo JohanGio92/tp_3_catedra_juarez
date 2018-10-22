@@ -6,16 +6,19 @@
 CPP_SRCS += \
 ../src/menu/BajaDeFiguraGeometrica.cpp \
 ../src/menu/ConsultaDeFiguraGeometrica.cpp \
+../src/menu/ListadoDeFiguraGeometrica.cpp \
 ../src/menu/Opcion.cpp 
 
 OBJS += \
 ./src/menu/BajaDeFiguraGeometrica.o \
 ./src/menu/ConsultaDeFiguraGeometrica.o \
+./src/menu/ListadoDeFiguraGeometrica.o \
 ./src/menu/Opcion.o 
 
 CPP_DEPS += \
 ./src/menu/BajaDeFiguraGeometrica.d \
 ./src/menu/ConsultaDeFiguraGeometrica.d \
+./src/menu/ListadoDeFiguraGeometrica.d \
 ./src/menu/Opcion.d 
 
 
