@@ -8,6 +8,7 @@ RM := rm -rf
 
 # All of the sources participating in the build are defined here
 -include sources.mk
+-include src/utilidades/subdir.mk
 -include src/modelos/figura_geometrica_2d/subdir.mk
 -include src/modelos/archivo_de_figuras_geometricas_2D/subdir.mk
 -include src/subdir.mk

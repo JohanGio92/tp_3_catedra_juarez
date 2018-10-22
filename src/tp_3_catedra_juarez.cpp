@@ -1,11 +1,11 @@
 #include "modelos/figura_geometrica_2d/FiguraGeometrica2D.h"
 #include "utilidades/ListaEnlazada.h"
-#include "modelos/archivo_de_figuras_geometricas_2D/ArchivoFigurasGeometricas2D.h"
 #include <iostream>
+#include "modelos/archivo_de_figuras_geometricas_2D/ArchivoDeFigurasGeometricas2D.h"
 
 
 int main() {
-	ArchivoFigurasGeometricas2D archivo;
+	ArchivoDeFigurasGeometricas2D archivo;
 	ListaEnlazada<FiguraGeometrica2D*> figuras;
 
 	archivo.convertirArchivoHaciaLista(figuras);
