@@ -4,14 +4,17 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 CPP_SRCS += \
+../src/menu/BajaDeFiguraGeometrica.cpp \
 ../src/menu/ConsultaDeFiguraGeometrica.cpp \
 ../src/menu/Opcion.cpp 
 
 OBJS += \
+./src/menu/BajaDeFiguraGeometrica.o \
 ./src/menu/ConsultaDeFiguraGeometrica.o \
 ./src/menu/Opcion.o 
 
 CPP_DEPS += \
+./src/menu/BajaDeFiguraGeometrica.d \
 ./src/menu/ConsultaDeFiguraGeometrica.d \
 ./src/menu/Opcion.d 
 

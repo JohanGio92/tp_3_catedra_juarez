@@ -6,7 +6,6 @@
 class ConsultaDeFiguraGeometrica : public Opcion {
 public:
 	ConsultaDeFiguraGeometrica(ListaEnlazada<FiguraGeometrica2D*> figuras);
-	void mostrarTitulo() override;
 	void ejecutar() override;
 	virtual ~ConsultaDeFiguraGeometrica();
 };

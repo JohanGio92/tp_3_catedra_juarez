@@ -7,3 +7,6 @@ Opcion::Opcion(std::string titulo, ListaEnlazada<FiguraGeometrica2D*> figuras) :
 Opcion::~Opcion() {
 }
 
+void Opcion::mostrarTitulo() {
+	consola.escribir(titulo);
+}

@@ -12,8 +12,6 @@ public:
 	Entero leerEntero(std::string mensaje);
 	template <typename T>
 	void escribir(T mensaje);
-	template <typename T>
-	std::string toString(const T &value);
 	virtual ~Consola();
 };
 
@@ -23,7 +21,7 @@ void Consola::escribir(T mensaje) {
 }
 
 template<typename T>
-std::string Consola::toString(const T &value) {
+std::string toString(const T &value) {
     std::ostringstream oss;
     oss << value;
     return oss.str();
