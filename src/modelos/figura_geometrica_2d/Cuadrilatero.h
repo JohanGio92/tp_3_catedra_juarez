@@ -8,8 +8,8 @@ protected:
 	static const unsigned CANTIDAD_DE_LADOS;
 	double lado;
 public:
-	Cuadrilatero();
-	Cuadrilatero(double lado);
+	Cuadrilatero(std::string tipoDeFigura);
+	Cuadrilatero(std::string tipoDeFigura, double lado);
 };
 
 #endif

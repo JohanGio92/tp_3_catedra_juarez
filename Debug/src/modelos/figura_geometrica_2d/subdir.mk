@@ -7,18 +7,21 @@ CPP_SRCS += \
 ../src/modelos/figura_geometrica_2d/Circulo.cpp \
 ../src/modelos/figura_geometrica_2d/Cuadrado.cpp \
 ../src/modelos/figura_geometrica_2d/Cuadrilatero.cpp \
+../src/modelos/figura_geometrica_2d/FiguraGeometrica2D.cpp \
 ../src/modelos/figura_geometrica_2d/Rectangulo.cpp 
 
 OBJS += \
 ./src/modelos/figura_geometrica_2d/Circulo.o \
 ./src/modelos/figura_geometrica_2d/Cuadrado.o \
 ./src/modelos/figura_geometrica_2d/Cuadrilatero.o \
+./src/modelos/figura_geometrica_2d/FiguraGeometrica2D.o \
 ./src/modelos/figura_geometrica_2d/Rectangulo.o 
 
 CPP_DEPS += \
 ./src/modelos/figura_geometrica_2d/Circulo.d \
 ./src/modelos/figura_geometrica_2d/Cuadrado.d \
 ./src/modelos/figura_geometrica_2d/Cuadrilatero.d \
+./src/modelos/figura_geometrica_2d/FiguraGeometrica2D.d \
 ./src/modelos/figura_geometrica_2d/Rectangulo.d 
 
 

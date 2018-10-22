@@ -3,7 +3,8 @@
 Rectangulo::Rectangulo() : Rectangulo(1, 1) {
 }
 
-Rectangulo::Rectangulo(double altura, double base) : Cuadrilatero(altura), base(base){
+Rectangulo::Rectangulo(double altura, double base) :
+		Cuadrilatero("Rectangulo", altura), base(base) {
 }
 
 double Rectangulo::calcularSuperficie() {

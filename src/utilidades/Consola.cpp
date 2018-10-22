@@ -1,14 +1,14 @@
 #include "Consola.h"
 
-Console::Console() {
+Consola::Consola() {
 }
 
-Entero Console::leerEntero(std::string mensaje) {
+Entero Consola::leerEntero(std::string mensaje) {
 	Entero entrada;
-	this->Escribir(mensaje);
+	this->escribir(mensaje);
 	std:: cin >> entrada;
 	return entrada;
 }
 
-Console::~Console() {
+Consola::~Consola() {
 }

@@ -7,7 +7,7 @@ Circulo::Circulo() :
 }
 
 Circulo::Circulo(double radio) :
-		radio(radio) {
+		FiguraGeometrica2D("Circulo"), radio(radio){
 }
 
 double Circulo::calcularSuperficie() {

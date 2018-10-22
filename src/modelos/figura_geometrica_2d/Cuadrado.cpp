@@ -1,9 +1,9 @@
 #include "Cuadrado.h"
 
-Cuadrado::Cuadrado() : Cuadrilatero(){
+Cuadrado::Cuadrado() : Cuadrado(1){
 }
 
-Cuadrado::Cuadrado(double lado) : Cuadrilatero(lado) {
+Cuadrado::Cuadrado(double lado) : Cuadrilatero("Cuadrado", lado) {
 }
 
 double Cuadrado::calcularSuperficie() {

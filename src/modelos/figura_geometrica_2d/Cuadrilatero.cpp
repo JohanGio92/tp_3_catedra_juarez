@@ -2,10 +2,10 @@
 
 const unsigned Cuadrilatero::CANTIDAD_DE_LADOS = 4;
 
-Cuadrilatero::Cuadrilatero() :
-		Cuadrilatero(0.0) {
+Cuadrilatero::Cuadrilatero(std::string tipoDeFigura) :
+		Cuadrilatero(tipoDeFigura, 1.1) {
 }
 
-Cuadrilatero::Cuadrilatero(double lado) :
-		lado(lado) {
+Cuadrilatero::Cuadrilatero(std::string tipoDeFigura, double lado) :
+		 FiguraGeometrica2D(tipoDeFigura), lado(lado) {
 }

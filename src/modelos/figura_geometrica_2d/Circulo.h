@@ -3,6 +3,7 @@
 
 #include "../archivo_de_figuras_geometricas_2D/ConstructorDeFigurasGeometricas2D.h"
 #include "FiguraGeometrica2D.h"
+#include "../../utilidades/Consola.h"
 
 class Circulo : public FiguraGeometrica2D, public ConstructorDeFigurasGeometricas2D {
 private:

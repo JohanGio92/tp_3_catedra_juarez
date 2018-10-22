@@ -6,24 +6,24 @@
 #include <sstream>
 typedef int Entero;
 
-class Console {
+class Consola {
 public:
-	Console();
+	Consola();
 	Entero leerEntero(std::string mensaje);
 	template <typename T>
-	void Escribir(T mensaje);
+	void escribir(T mensaje);
 	template <typename T>
 	std::string toString(const T &value);
-	virtual ~Console();
+	virtual ~Consola();
 };
 
 template<typename T>
-void Console::Escribir(T mensaje) {
+void Consola::escribir(T mensaje) {
 	std::cout << mensaje << std::endl;
 }
 
 template<typename T>
-std::string Console::toString(const T &value) {
+std::string Consola::toString(const T &value) {
     std::ostringstream oss;
     oss << value;
     return oss.str();
