@@ -16,6 +16,7 @@ public:
 	bool estaVacio();
 	void agregar(T elemento);
 	void agregar(unsigned posicion, T elemento);
+	void remover(unsigned posicion);
 	Nodo<T>* obtenerNodo(unsigned posicion);
 	unsigned obtenerTamanio();
 	T operator[](unsigned posicion);
@@ -71,6 +72,22 @@ bool ListaEnlazada<T>::estaEnElRango(unsigned posicion) {
 template<class T>
 inline unsigned ListaEnlazada<T>::obtenerTamanio() {
 	return tamanio;
+}
+
+template<class T>
+void ListaEnlazada<T>::remover(unsigned posicion) {
+	assert(this->estaEnElRango(posicion));
+	if((int)posicion == 0){
+		Nodo<T>* posterior = primero->obtenerSiguiente();
+		delete primero;
+		primero = posterior;
+	} else{
+		Nodo<T>* anterior = this->obtenerNodo(posicion - 1);
+		Nodo<T>* posterior = anterior->obtenerSiguiente();
+		anterior->cambiarSiguiente(posterior->obtenerSiguiente());
+		delete posterior;
+	}
+	--tamanio;
 }
 
 template<class T>
