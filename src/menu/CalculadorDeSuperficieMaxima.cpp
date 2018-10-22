@@ -2,7 +2,7 @@
 
 CalculadorDeSuperficieMaxima::CalculadorDeSuperficieMaxima(
 		ListaEnlazada<FiguraGeometrica2D*>& figuras) :
-		Opcion(". Mostrar Maxima Superficie.", figuras) {
+		Opcion(". Mostrar Superficie Maxima.", figuras) {
 }
 
 void CalculadorDeSuperficieMaxima::ejecutar() {

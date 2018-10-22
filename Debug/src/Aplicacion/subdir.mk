@@ -4,13 +4,16 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 CPP_SRCS += \
-../src/Aplicacion/FigurasPolimorficas.cpp 
+../src/Aplicacion/FigurasPolimorficas.cpp \
+../src/Aplicacion/tp_3_catedra_juarez.cpp 
 
 OBJS += \
-./src/Aplicacion/FigurasPolimorficas.o 
+./src/Aplicacion/FigurasPolimorficas.o \
+./src/Aplicacion/tp_3_catedra_juarez.o 
 
 CPP_DEPS += \
-./src/Aplicacion/FigurasPolimorficas.d 
+./src/Aplicacion/FigurasPolimorficas.d \
+./src/Aplicacion/tp_3_catedra_juarez.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes

@@ -1,4 +1,4 @@
-#include "Aplicacion/FigurasPolimorficas.h"
+#include "FigurasPolimorficas.h"
 
 
 int main() {
