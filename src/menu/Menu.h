@@ -18,7 +18,6 @@ private:
 	unsigned cantidad;
 	Opcion **opciones;
 	Salida *salida;
-	ListaEnlazada<FiguraGeometrica2D*> figuras;
 public:
 	Menu();
 	void mostrar();

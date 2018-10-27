@@ -1,6 +1,7 @@
 #include "BajaDeFiguraGeometrica.h"
 
-BajaDeFiguraGeometrica::BajaDeFiguraGeometrica(ListaEnlazada<FiguraGeometrica2D*>& figuras) : Opcion(". Remover de la Lista.", figuras){
+BajaDeFiguraGeometrica::BajaDeFiguraGeometrica() :
+		Opcion(". Remover de la Lista.") {
 }
 
 void BajaDeFiguraGeometrica::ejecutar() {

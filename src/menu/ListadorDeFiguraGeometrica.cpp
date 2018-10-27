@@ -1,7 +1,6 @@
 #include "ListadorDeFiguraGeometrica.h"
 
-ListadorDeFiguraGeometrica::ListadorDeFiguraGeometrica(
-		ListaEnlazada<FiguraGeometrica2D*>& figuras) : Opcion(". Listar Figuras.", figuras) {
+ListadorDeFiguraGeometrica::ListadorDeFiguraGeometrica() : Opcion(". Listar Figuras.") {
 }
 
 void ListadorDeFiguraGeometrica::ejecutar() {

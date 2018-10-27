@@ -1,8 +1,7 @@
 #include "CalculadorDePerimetroMaximo.h"
 
-CalculadorDePerimetroMaximo::CalculadorDePerimetroMaximo(
-		ListaEnlazada<FiguraGeometrica2D*>& figuras) :
-		Opcion(". Mostrar Perimetro Maximo.", figuras) {
+CalculadorDePerimetroMaximo::CalculadorDePerimetroMaximo() :
+		Opcion(". Mostrar Perimetro Maximo.") {
 }
 
 void CalculadorDePerimetroMaximo::ejecutar() {

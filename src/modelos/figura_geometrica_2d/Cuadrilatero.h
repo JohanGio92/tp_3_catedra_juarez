@@ -10,6 +10,7 @@ protected:
 public:
 	Cuadrilatero(std::string tipoDeFigura);
 	Cuadrilatero(std::string tipoDeFigura, double lado);
+	virtual ~Cuadrilatero();
 };
 
 #endif

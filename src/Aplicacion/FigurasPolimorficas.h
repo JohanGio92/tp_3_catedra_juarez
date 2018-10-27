@@ -6,7 +6,6 @@
 class FigurasPolimorficas {
 private:
 	Menu menu;
-	ListaEnlazada<FiguraGeometrica2D*> figuras;
 public:
 	FigurasPolimorficas();
 	void comenzar();

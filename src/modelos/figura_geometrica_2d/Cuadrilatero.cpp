@@ -9,3 +9,6 @@ Cuadrilatero::Cuadrilatero(std::string tipoDeFigura) :
 Cuadrilatero::Cuadrilatero(std::string tipoDeFigura, double lado) :
 		 FiguraGeometrica2D(tipoDeFigura), lado(lado) {
 }
+
+Cuadrilatero::~Cuadrilatero() {
+}

@@ -5,7 +5,7 @@
 
 class BajaDeFiguraGeometrica :public Opcion {
 public:
-	BajaDeFiguraGeometrica(ListaEnlazada<FiguraGeometrica2D*>& figuras);
+	BajaDeFiguraGeometrica();
 	void ejecutar() override;
 	virtual ~BajaDeFiguraGeometrica();
 };

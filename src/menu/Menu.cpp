@@ -32,7 +32,7 @@ void Menu::cerrar(){
 }
 
 void Menu::destruir() {
-	if (opciones != nullptr) {
+	if (*opciones != nullptr) {
 		for (unsigned i = 0; i < LONGITUD; ++i) {
 			delete opciones[i];
 		}

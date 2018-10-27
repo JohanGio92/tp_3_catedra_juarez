@@ -1,8 +1,7 @@
 #include "CalculadorDeSuperficieMinima.h"
 
-CalculadorDeSuperficieMinima::CalculadorDeSuperficieMinima(
-		ListaEnlazada<FiguraGeometrica2D*>& figuras) :
-		Opcion(". Mostrar Superficie Minima.", figuras) {
+CalculadorDeSuperficieMinima::CalculadorDeSuperficieMinima() :
+		Opcion(". Mostrar Superficie Minima.") {
 }
 
 void CalculadorDeSuperficieMinima::ejecutar() {

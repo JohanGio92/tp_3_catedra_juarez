@@ -1,8 +1,7 @@
 #include "CalculadorDeSuperficieMaxima.h"
 
-CalculadorDeSuperficieMaxima::CalculadorDeSuperficieMaxima(
-		ListaEnlazada<FiguraGeometrica2D*>& figuras) :
-		Opcion(". Mostrar Superficie Maxima.", figuras) {
+CalculadorDeSuperficieMaxima::CalculadorDeSuperficieMaxima() :
+		Opcion(". Mostrar Superficie Maxima.") {
 }
 
 void CalculadorDeSuperficieMaxima::ejecutar() {

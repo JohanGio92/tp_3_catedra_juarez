@@ -1,15 +1,13 @@
 #include "FigurasPolimorficas.h"
 
 FigurasPolimorficas::FigurasPolimorficas() {
-	ArchivoDeFigurasGeometricas2D archivoDeFigurasGeometricas;
-	archivoDeFigurasGeometricas.convertirArchivoHaciaLista(figuras);
-	menu.agnadir(new ConsultaDeFiguraGeometrica(figuras));
-	menu.agnadir(new BajaDeFiguraGeometrica(figuras));
-	menu.agnadir(new ListadorDeFiguraGeometrica(figuras));
-	menu.agnadir(new CalculadorDeSuperficieMaxima(figuras));
-	menu.agnadir(new CalculadorDeSuperficieMinima(figuras));
-	menu.agnadir(new CalculadorDePerimetroMaximo(figuras));
-	menu.agnadir(new CalculadorDePerimetroMinimo(figuras));
+	menu.agnadir(new ConsultaDeFiguraGeometrica());
+	menu.agnadir(new BajaDeFiguraGeometrica());
+	menu.agnadir(new ListadorDeFiguraGeometrica());
+	menu.agnadir(new CalculadorDeSuperficieMaxima());
+	menu.agnadir(new CalculadorDeSuperficieMinima());
+	menu.agnadir(new CalculadorDePerimetroMaximo());
+	menu.agnadir(new CalculadorDePerimetroMinimo());
 	menu.cerrar();
 }
 
@@ -22,8 +20,6 @@ void FigurasPolimorficas::comenzar(){
 }
 
 FigurasPolimorficas::~FigurasPolimorficas() {
-	for (unsigned i = 0; i < figuras.obtenerTamanio(); ++i) {
-		delete figuras[i];
-	}
+
 }
 

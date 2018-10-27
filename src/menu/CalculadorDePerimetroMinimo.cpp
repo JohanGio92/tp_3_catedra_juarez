@@ -1,8 +1,7 @@
 #include "CalculadorDePerimetroMinimo.h"
 
-CalculadorDePerimetroMinimo::CalculadorDePerimetroMinimo(
-		ListaEnlazada<FiguraGeometrica2D*>& figuras) :
-		Opcion(". Mostar Perimetro Minimo.", figuras) {
+CalculadorDePerimetroMinimo::CalculadorDePerimetroMinimo() :
+		Opcion(". Mostar Perimetro Minimo.") {
 }
 
 void CalculadorDePerimetroMinimo::ejecutar() {
