@@ -1,6 +1,6 @@
-#include "FigurasPolimorficas.h"
+#include "PresentadorDeFigurasGeometricas.h"
 
-FigurasPolimorficas::FigurasPolimorficas() {
+PresentadorDeFigurasGeometricas::PresentadorDeFigurasGeometricas() {
 	menu.agnadir(new ConsultaDeFiguraGeometrica());
 	menu.agnadir(new BajaDeFiguraGeometrica());
 	menu.agnadir(new ListadorDeFiguraGeometrica());
@@ -11,7 +11,7 @@ FigurasPolimorficas::FigurasPolimorficas() {
 	menu.cerrar();
 }
 
-void FigurasPolimorficas::comenzar(){
+void PresentadorDeFigurasGeometricas::presentar(){
 	while (!menu.terminado()) {
 		menu.mostrar();
 		Entero posicion = menu.leerPosicion();
@@ -19,7 +19,7 @@ void FigurasPolimorficas::comenzar(){
 	}
 }
 
-FigurasPolimorficas::~FigurasPolimorficas() {
+PresentadorDeFigurasGeometricas::~PresentadorDeFigurasGeometricas() {
 
 }
 

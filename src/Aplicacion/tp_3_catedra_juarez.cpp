@@ -1,8 +1,8 @@
-#include "FigurasPolimorficas.h"
+#include "PresentadorDeFigurasGeometricas.h"
 
 
 int main() {
-	FigurasPolimorficas figurasPolimorficas;
-	figurasPolimorficas.comenzar();
+	PresentadorDeFigurasGeometricas presentadorDefigurasGeometricas;
+	presentadorDefigurasGeometricas.presentar();
 	return 0;
 }
