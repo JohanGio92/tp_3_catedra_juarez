@@ -10,6 +10,7 @@
 #include "CalculadorDeSuperficieMinima.h"
 #include "ConsultaDeFiguraGeometrica.h"
 #include "ListadorDeFiguraGeometrica.h"
+#include "AltaDeFiguraGeometrica.h"
 #include "Salida.h"
 
 class Menu {

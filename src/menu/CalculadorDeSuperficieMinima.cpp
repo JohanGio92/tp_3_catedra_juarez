@@ -4,7 +4,7 @@ CalculadorDeSuperficieMinima::CalculadorDeSuperficieMinima() :
 		Opcion(". Mostrar Superficie Minima.") {
 }
 
-void CalculadorDeSuperficieMinima::ejecutar() {
+void CalculadorDeSuperficieMinima::ejecutar(ListaEnlazada<FiguraGeometrica2D*>& figuras) {
 	double minimo = figuras[0]->calcularSuperficie();
 	for (unsigned i = 1; i < figuras.obtenerTamanio(); ++i) {
 		minimo = minimo > figuras[i]->calcularSuperficie() ?

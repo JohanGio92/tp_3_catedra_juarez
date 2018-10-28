@@ -8,7 +8,7 @@
 class ListadorDeFiguraGeometrica: public Opcion {
 public:
 	ListadorDeFiguraGeometrica();
-	void ejecutar() override;
+	void ejecutar(ListaEnlazada<FiguraGeometrica2D*>& figuras) override;
 	virtual ~ListadorDeFiguraGeometrica();
 };
 

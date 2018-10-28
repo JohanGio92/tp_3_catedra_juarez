@@ -4,7 +4,7 @@ CalculadorDePerimetroMaximo::CalculadorDePerimetroMaximo() :
 		Opcion(". Mostrar Perimetro Maximo.") {
 }
 
-void CalculadorDePerimetroMaximo::ejecutar() {
+void CalculadorDePerimetroMaximo::ejecutar(ListaEnlazada<FiguraGeometrica2D*>& figuras) {
 	double maximo = figuras[0]->calcularPerimetro();
 	for (unsigned i = 1; i < figuras.obtenerTamanio(); ++i) {
 		maximo = maximo < figuras[i]->calcularPerimetro() ?

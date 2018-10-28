@@ -3,7 +3,7 @@
 Salida::Salida() : Opcion(". Salir"), terminado(false){
 }
 
-void Salida::ejecutar(){
+void Salida::ejecutar(ListaEnlazada<FiguraGeometrica2D*>& figuras){
 	terminado = true;
 }
 

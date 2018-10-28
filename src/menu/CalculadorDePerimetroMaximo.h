@@ -8,7 +8,7 @@
 class CalculadorDePerimetroMaximo: public Opcion {
 public:
 	CalculadorDePerimetroMaximo();
-	void ejecutar() override;
+	void ejecutar(ListaEnlazada<FiguraGeometrica2D*>& figuras) override;
 	virtual ~CalculadorDePerimetroMaximo();
 };
 

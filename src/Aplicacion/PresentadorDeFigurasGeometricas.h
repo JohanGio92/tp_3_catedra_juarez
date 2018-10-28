@@ -6,6 +6,7 @@
 class PresentadorDeFigurasGeometricas {
 private:
 	Menu menu;
+	ListaEnlazada<FiguraGeometrica2D*> figuras;
 public:
 	PresentadorDeFigurasGeometricas();
 	void presentar();

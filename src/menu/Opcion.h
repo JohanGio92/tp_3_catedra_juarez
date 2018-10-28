@@ -11,10 +11,9 @@ class Opcion {
 protected:
 	Consola consola;
 	std::string titulo;
-	ListaEnlazada<FiguraGeometrica2D*> figuras;
 public:
 	Opcion(std::string titulo);
-	virtual void ejecutar() = 0;
+	virtual void ejecutar(ListaEnlazada<FiguraGeometrica2D*>& figuras) = 0;
 	virtual void mostrarTitulo(unsigned posicion);
 	virtual ~Opcion();
 };

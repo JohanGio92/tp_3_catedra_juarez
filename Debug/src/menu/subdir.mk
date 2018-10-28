@@ -4,6 +4,7 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 CPP_SRCS += \
+../src/menu/AltaDeFiguraGeometrica.cpp \
 ../src/menu/BajaDeFiguraGeometrica.cpp \
 ../src/menu/CalculadorDePerimetroMaximo.cpp \
 ../src/menu/CalculadorDePerimetroMinimo.cpp \
@@ -16,6 +17,7 @@ CPP_SRCS += \
 ../src/menu/Salida.cpp 
 
 OBJS += \
+./src/menu/AltaDeFiguraGeometrica.o \
 ./src/menu/BajaDeFiguraGeometrica.o \
 ./src/menu/CalculadorDePerimetroMaximo.o \
 ./src/menu/CalculadorDePerimetroMinimo.o \
@@ -28,6 +30,7 @@ OBJS += \
 ./src/menu/Salida.o 
 
 CPP_DEPS += \
+./src/menu/AltaDeFiguraGeometrica.d \
 ./src/menu/BajaDeFiguraGeometrica.d \
 ./src/menu/CalculadorDePerimetroMaximo.d \
 ./src/menu/CalculadorDePerimetroMinimo.d \

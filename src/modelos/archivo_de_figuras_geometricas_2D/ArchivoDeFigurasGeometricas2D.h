@@ -11,10 +11,10 @@
 class ArchivoDeFigurasGeometricas2D {
 private:
 	static const std::string NOMBRE_DEL_ARCHIVO;
-	static std::string TIPOS_DE_FIGURAS;
 	std::ifstream rutaDeEntrada;
 	ConstructorDeFigurasGeometricas2D **constructorDeFiguras;
 public:
+	static std::string TIPOS_DE_FIGURAS;
 	ArchivoDeFigurasGeometricas2D();
 	void convertirArchivoHaciaLista(ListaEnlazada<FiguraGeometrica2D*>& figuras);
 	virtual ~ArchivoDeFigurasGeometricas2D();

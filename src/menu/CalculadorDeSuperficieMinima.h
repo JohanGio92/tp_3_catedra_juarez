@@ -8,7 +8,7 @@
 class CalculadorDeSuperficieMinima: public Opcion {
 public:
 	CalculadorDeSuperficieMinima();
-	void ejecutar() override;
+	void ejecutar(ListaEnlazada<FiguraGeometrica2D*>& figuras) override;
 	virtual ~CalculadorDeSuperficieMinima();
 };
 

@@ -8,7 +8,7 @@
 class CalculadorDeSuperficieMaxima : public Opcion{
 public:
 	CalculadorDeSuperficieMaxima();
-	void ejecutar() override;
+	void ejecutar(ListaEnlazada<FiguraGeometrica2D*>& figuras) override;
 	virtual ~CalculadorDeSuperficieMaxima();
 };
 

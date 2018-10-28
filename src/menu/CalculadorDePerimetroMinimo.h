@@ -8,7 +8,7 @@
 class CalculadorDePerimetroMinimo : public Opcion {
 public:
 	CalculadorDePerimetroMinimo();
-	void ejecutar() override;
+	void ejecutar(ListaEnlazada<FiguraGeometrica2D*>& figuras) override;
 	virtual ~CalculadorDePerimetroMinimo();
 };
 

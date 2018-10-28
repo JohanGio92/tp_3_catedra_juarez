@@ -1,6 +1,6 @@
 #include "Menu.h"
 
-const unsigned Menu::LONGITUD = 8;
+const unsigned Menu::LONGITUD = 9;
 
 Menu::Menu() {
 	salida = nullptr;

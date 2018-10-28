@@ -8,7 +8,7 @@ private:
 	bool terminado;
 public:
 	Salida();
-	void ejecutar() override;
+	void ejecutar(ListaEnlazada<FiguraGeometrica2D*>& figuras) override;
 	bool terminar();
 	virtual ~Salida();
 };

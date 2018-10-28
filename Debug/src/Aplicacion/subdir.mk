@@ -4,15 +4,15 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 CPP_SRCS += \
-../src/Aplicacion/FigurasPolimorficas.cpp \
+../src/Aplicacion/PresentadorDeFigurasGeometricas.cpp \
 ../src/Aplicacion/tp_3_catedra_juarez.cpp 
 
 OBJS += \
-./src/Aplicacion/FigurasPolimorficas.o \
+./src/Aplicacion/PresentadorDeFigurasGeometricas.o \
 ./src/Aplicacion/tp_3_catedra_juarez.o 
 
 CPP_DEPS += \
-./src/Aplicacion/FigurasPolimorficas.d \
+./src/Aplicacion/PresentadorDeFigurasGeometricas.d \
 ./src/Aplicacion/tp_3_catedra_juarez.d 
 
 
