@@ -221,7 +221,7 @@ template<class T> void ListaEnlazada<T>::remover(unsigned int posicion) {
 			removido = anterior->obtenerSiguiente();
 			anterior->cambiarSiguiente(removido->obtenerSiguiente());
 		}
-
+		delete removido->obtenerDato();
 		delete removido;
 		this->tamanio--;
 

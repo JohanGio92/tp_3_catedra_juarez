@@ -9,6 +9,7 @@ private:
 public:
 	Salida();
 	void ejecutar(ListaEnlazada<FiguraGeometrica2D*>& figuras) override;
+	void destruir(ListaEnlazada<FiguraGeometrica2D*>& figuras);
 	bool terminar();
 	virtual ~Salida();
 };

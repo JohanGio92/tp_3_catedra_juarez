@@ -23,8 +23,5 @@ void PresentadorDeFigurasGeometricas::presentar(){
 }
 
 PresentadorDeFigurasGeometricas::~PresentadorDeFigurasGeometricas() {
-	for (unsigned i = 0; i < figuras.obtenerTamanio(); ++i) {
-		delete figuras[i];
-	}
 }
 
